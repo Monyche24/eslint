@@ -1934,8 +1934,7 @@ describe("FlatESLint", () => {
                     overrideConfig: {
                         rules: {
                             "indent-legacy": 1,
-                            "require-jsdoc": 1,
-                            "valid-jsdoc": 1
+                            "require-jsdoc": 1
                         }
                     }
                 });
@@ -1945,8 +1944,7 @@ describe("FlatESLint", () => {
                     results[0].usedDeprecatedRules,
                     [
                         { ruleId: "indent-legacy", replacedBy: ["indent"] },
-                        { ruleId: "require-jsdoc", replacedBy: [] },
-                        { ruleId: "valid-jsdoc", replacedBy: [] }
+                        { ruleId: "require-jsdoc", replacedBy: [] }
                     ]
                 );
             });
@@ -1956,7 +1954,7 @@ describe("FlatESLint", () => {
                     cwd: originalDir,
                     overrideConfigFile: true,
                     overrideConfig: {
-                        rules: { indent: 1, "valid-jsdoc": 0, "require-jsdoc": 0 }
+                        rules: { indent: 1, "require-jsdoc": 0 }
                     }
                 });
                 const results = await eslint.lintFiles(["lib/cli*.js"]);
