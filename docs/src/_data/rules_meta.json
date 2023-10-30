@@ -1508,7 +1508,8 @@
             "description": "Disallow calling some `Object.prototype` methods directly on objects",
             "recommended": true,
             "url": "https://eslint.org/docs/latest/rules/no-prototype-builtins"
-        }
+        },
+        "hasSuggestions": true
     },
     "no-redeclare": {
         "type": "suggestion",
@@ -2466,17 +2467,6 @@
             "recommended": true,
             "url": "https://eslint.org/docs/latest/rules/use-isnan"
         }
-    },
-    "valid-jsdoc": {
-        "type": "suggestion",
-        "docs": {
-            "description": "Enforce valid JSDoc comments",
-            "recommended": false,
-            "url": "https://eslint.org/docs/latest/rules/valid-jsdoc"
-        },
-        "fixable": "code",
-        "deprecated": true,
-        "replacedBy": []
     },
     "valid-typeof": {
         "type": "problem",

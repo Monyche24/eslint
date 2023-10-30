@@ -258,7 +258,7 @@
                 "description": "Disallow calling some `Object.prototype` methods directly on objects",
                 "recommended": true,
                 "fixable": false,
-                "hasSuggestions": false
+                "hasSuggestions": true
             },
             {
                 "name": "no-self-assign",
@@ -1985,10 +1985,6 @@
         {
             "name": "require-jsdoc",
             "replacedBy": []
-        },
-        {
-            "name": "valid-jsdoc",
-            "replacedBy": []
         }
     ],
     "removed": [
@@ -2100,6 +2096,12 @@
             "removed": "spaced-line-comment",
             "replacedBy": [
                 "spaced-comment"
+            ]
+        },
+        {
+            "removed": "valid-jsdoc",
+            "replacedBy": [
+                "jsdoc/require-jsdoc"
             ]
         }
     ]
