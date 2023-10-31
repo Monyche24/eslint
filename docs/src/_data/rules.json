@@ -2101,7 +2101,6 @@
         {
             "removed": "valid-jsdoc",
             "replacedBy": [
-                "jsdoc/require-jsdoc"
             ]
         }
     ]
