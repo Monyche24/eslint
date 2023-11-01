@@ -1752,7 +1752,7 @@ describe("CLIEngine", () => {
                 useEslintrc: false,
                 rules: {
                     "indent-legacy": 1,
-                    "require-jsdoc": 1
+                    "callback-return": 1
                 }
             });
 
@@ -1762,7 +1762,7 @@ describe("CLIEngine", () => {
                 report.usedDeprecatedRules,
                 [
                     { ruleId: "indent-legacy", replacedBy: ["indent"] },
-                    { ruleId: "require-jsdoc", replacedBy: [] }
+                    { ruleId: "callback-return", replacedBy: [] }
                 ]
             );
             assert.strictEqual(report.results[0].suppressedMessages.length, 0);
@@ -1772,7 +1772,7 @@ describe("CLIEngine", () => {
             engine = new CLIEngine({
                 cwd: originalDir,
                 useEslintrc: false,
-                rules: { indent: 1, "require-jsdoc": 0 }
+                rules: { indent: 1, "callback-return": 0 }
             });
 
             const report = engine.executeOnFiles(["lib/cli*.js"]);

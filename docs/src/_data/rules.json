@@ -1981,10 +1981,6 @@
         {
             "name": "prefer-reflect",
             "replacedBy": []
-        },
-        {
-            "name": "require-jsdoc",
-            "replacedBy": []
         }
     ],
     "removed": [
@@ -2100,8 +2096,7 @@
         },
         {
             "removed": "valid-jsdoc",
-            "replacedBy": [
-            ]
+            "replacedBy": []
         }
     ]
 }
